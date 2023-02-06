@@ -83,3 +83,27 @@ print(round(23.1231,2))
 # 2 useful functions for pattern-matching : grepl() and grep()
 # grepl() - returns logical indicating if pattern was found
 # grep() - returns vector of index locations of matching pattern instances
+
+text <- "Hi there, do you know who you are voting for?"
+print(grepl('voting',text))
+print(grepl('vote',text))
+
+v <- c('a','b','c','d')
+print(grep('c',v))
+print(grep('e',v))
+# Remember: indexing in R starts with 1, not 0
+
+
+# (5) Dates and Timestamps
+# Today's Date: Sys.Date()
+print(Sys.Date())
+
+# to convert strings in R to Date objects, use as.Date() and use % symbols to correlate with your given format
+print(as.Date('2023-01-06'))
+print(as.Date('Feb-06-2023',format='%b-%d-%Y'))
+
+# R uses a POSIXct object type to store time information
+# Use as.POSIXct() for converting string to POSIXct object for time series analysis
+# print(as.POSIXct("11:02:03",format="%H%:%M:%S"))
+# Easier to use strptime() function
+strptime("11:02:03",format="%H:%M:%S")
