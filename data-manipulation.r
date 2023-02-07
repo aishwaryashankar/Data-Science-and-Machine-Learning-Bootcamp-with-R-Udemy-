@@ -1,6 +1,8 @@
 ########## GUIDE TO USING DPLYR ##########
-library(dplyr)
+library(dplyr) # pronounced - deeplyer
 library(nycflights13)
+
+
 summary(flights) # flights is a dataframe in the nycflights13 data package
 dim(flights) # dimensions of the flights dataframe
 
@@ -40,4 +42,14 @@ sample_n(flights, 10)
 # sample_frac() function - take a random sample of rows (fraction - some percentage of the data)
 sample_frac(flights, 0.00005) # 0.005% of the data
 
+
+########## PIPE OPERATOR ##########
+# %>% allows us to chain multiple operations/functions on a dataset. Create a pipeline basically
+# Format : data %>% operation1 %>% op2 %>% op3
+df <- head(flights)
+result <- df %>% filter(month > 3) %>% arrange(desc(dep_time))
+print(result)
+
+
+########## GUIDE TO USING TIDYR ##########
 
