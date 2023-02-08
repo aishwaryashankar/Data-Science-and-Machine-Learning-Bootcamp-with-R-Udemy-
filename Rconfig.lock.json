@@ -5,6 +5,9 @@
 		},
 		{
 			"name": "nycflights13"
+		},
+		{
+			"name": "ggplot2"
 		}
 	]
 }
