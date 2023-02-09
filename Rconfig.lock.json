@@ -8,6 +8,9 @@
 		},
 		{
 			"name": "ggplot2"
+		},
+		{
+			"name": "ggplot2movies"
 		}
 	]
 }
