@@ -1,0 +1,20 @@
+---------- Notes are for my own reference and taken from "Difference between AI, ML, and DL" article by Rupali Roy ----------
+
+
+AI = enables machines to think (exhibit human-like behavior)
+- the type of AI we have presently is ANI (Artifical Narrow Intelligence aka "weak AI") - whereby the narrow AI is programmed to do a single thing and it does that very well
+
+ML = subset of AI that uses statistical learning algorithms to build systems that have the ability to automatically learn and improve from experiences without being explicitly programmed
+- In ML, we train the algorithm by providing it with a lot of data and allowing it to learn more about the processed information
+- ML algorithms can be classified into 3 broad categories: supervised, unsupervised, and reinforcement learning
+- Supervised Learning : we have input variables (x) and an output variable (y) and we use an algorithm to learn the mapping from input to output. Supervised learning algorithm takes an input dataset and its known responses to the data (output) to learn the regression/classification model. A learning algorithm then trains a model to generate a prediction for a new data value
+- Unsupervised Learning : used when we don't have labelled data. Main focus = to learn more about the data by inferring patterns in the dataset
+- Reinforcement Learning : learning by continuously interacting with the environment. Type of algorithm in which an "agent" learns from an interactive environment through trial and error by continuously using feedback on previous actions and experiences. Uses "rewards and punishments" - agent receives reward for performing correctly and penalty for performing incorrectly
+
+DL = machine learning technique inspired by the way a human brain filters information
+- filter input data through layers to predict and classify information
+- ie. image recognition
+- uses neural networks (3 types):
+1) Convolutional Neural Networks (CNN) - used in computer vision for analyzing and classifying images. Takes input image and assigns weights/biases to various aspects of the image
+2) Recurrent Neural Networks (RNN) - used in sequence prediction problems and used in field of NLP. Called "recurrent" because they perform same task for every element of a sequence, with the output being dependent on previous computations. Another way to think of RNN is that they have "memory" which captures information about what has been calculated so far
+3) Recursive Neural Networks - more like a hierarchical network

@@ -1,0 +1,14 @@
+- All we are trying to do when we calculate a regression line is to draw a line that is as close to every dot as possible
+- For classic linear regression (aka "Least Squares Method"), you only measure the closeness in the "up and down" direction
+- Regression: the estimation of a continuous dependent variable or response from a list of input variables, or features
+- Goal with linear regression is to minimize the vertical distance between all the data points and the line we draw
+- Using R for Linear Regression:
+Formulas in R take the form (y ~ x). To add more predictor variables, just use the + sign. ie. y ~ x + z
+
+model <- lm(log(PINCP,base=10) ~ AGEP + SEX + COW + SCHL, data=dtrain)
+lm=linear regression modeling command
+model = R object to save the result in
+log(PINCP,base=10) = quantity we want to predict
+AGEP, SEX, COW, SCHL = variables available to make prediction
+dtrain = dataframe to use for training
+
