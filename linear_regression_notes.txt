@@ -12,3 +12,5 @@ log(PINCP,base=10) = quantity we want to predict
 AGEP, SEX, COW, SCHL = variables available to make prediction
 dtrain = dataframe to use for training
 
+Then you store your prediction as a new column:
+dtest$predLogPINCP <- predict(model,newdata=dtest)

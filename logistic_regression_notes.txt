@@ -1,0 +1,17 @@
+logistic regression is a method for "classification"
+classification = problem of identifying which category something belongs to (ie. spam vs ham emails, disease diagnosis, etc...)
+binary classification: 0 or 1
+logistic regression curve only goes between 0 and 1
+Sigmoid = logistic function - takes in any value and outputs it to be between 0 and 1
+You can use a confusion matrix to evaluate classification models
+Confusion Matrix - table used to describe performance of classification model on set of test data for which the true values are already known
+
+Terminology to know:
+- True Positive (TP) - predicted yes and actual yes
+- True Negative (TN) - predicted no and actual no
+- False Positive (FP) - predicted yes but actual no
+- False Negative (FN) - predicted no but actual yes
+Accuracy (overall, how often is it correct): (TP + TN)/total
+Misclassification Rate (overall, how often is it wrong):
+(FP + FN)/total
+
